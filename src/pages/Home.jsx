@@ -29,18 +29,18 @@ const featureData = [
   {
     title: "Fast Response",
     imgUrl: cs,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    desc: "Kami Memiliki Layanan yang terbaik untuk kamu yang sedang mencari kursus sesuai dengan kebutuhan kamu.",
   },
 
   {
     title: "Get Certificate",
     imgUrl: certi,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    desc: "Kami Memiliki Layanan yang terbaik untuk kamu yang sedang mencari kursus sesuai dengan kebutuhan kamu.",
   },
   {
     title: "Learn From Anywhere",
     imgUrl: featureImg01,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    desc: "Kami Memiliki Layanan yang terbaik untuk kamu yang sedang mencari kursus sesuai dengan kebutuhan kamu.",
   },
 ];
 
