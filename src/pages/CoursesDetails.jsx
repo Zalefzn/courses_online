@@ -94,7 +94,7 @@ const CoursesDetails = () => {
                 <h2 className="product__title mb-3">{title}</h2>
                 <p className="product__price">
                   {" "}
-                  Price: <span>${price}</span>
+                  Price: <span>Rp.{price}</span>
                 </p>
                 <p className="category mb-5">
                   Category: <span>{category}</span>

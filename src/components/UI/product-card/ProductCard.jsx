@@ -13,8 +13,6 @@ const ProductCard = (props) => {
   
 
   const addToCart = () => {
-
-    
     dispatch(
       cartActions.addItem({
         id,
@@ -41,7 +39,7 @@ const ProductCard = (props) => {
           <Link to={`/courses/${id}`}>{title}</Link>
         </h5>
         <div className=" d-flex align-items-center justify-content-between ">
-          <span className="product__price">${price}</span>
+          <span className="product__price">Rp.{price}</span>
           <button className="addTOCart__btn" onClick={addToCart}>
             Add to Cart
           </button>

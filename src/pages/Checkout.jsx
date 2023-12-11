@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import CommonSection from "../components/UI/common-section/CommonSection";
 import Helmet from "../components/Helmet/Helmet";
@@ -22,12 +23,21 @@ const Checkout = () => {
   const totalAmount = cartTotalAmount + Number(shippingCost);
 
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
-    swal({
-      icon: "success",
-      title: "Payment Success!"
-    });
-    
+    if(!enterName && !enterEmail){
+      swal({
+        icon: "warning",
+        title: "Payment Failed!"
+      });
+    } else {
+      swal({
+        icon: "success",
+        title: "Payment Success!"
+      });
+      navigate('/courses');
+    }
   }
 
   const submitHandler = (e) => {
@@ -112,14 +122,14 @@ const Checkout = () => {
             <Col lg="4" md="6">
               <div className="checkout__bill">
                 <h6 className="d-flex align-items-center justify-content-between mb-3">
-                  Subtotal: <span>${cartTotalAmount}</span>
+                  Subtotal: <span>Rp.{cartTotalAmount}</span>
                 </h6>
                 <h6 className="d-flex align-items-center justify-content-between mb-3">
-                  Shipping: <span>${shippingCost}</span>
+                  Shipping: <span>Rp.{shippingCost}</span>
                 </h6>
                 <div className="checkout__total">
                   <h5 className="d-flex align-items-center justify-content-between">
-                    Total: <span>${totalAmount}</span>
+                    Total: <span>Rp.{totalAmount}</span>
                   </h5>
                 </div>
               </div>

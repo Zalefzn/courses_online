@@ -9,9 +9,9 @@ import "../styles/hero-section.css";
 import { Link } from "react-router-dom";
 import Category from "../components/UI/category/Category.jsx";
 import "../styles/home.css";
-import featureImg01 from "../assets/images/service-01.png";
-import featureImg02 from "../assets/images/service-02.png";
-import featureImg03 from "../assets/images/service-03.png";
+import featureImg01 from "../assets/images/coding.png";
+import certi from '../assets/images/certificate.png';
+import cs from '../assets/images/cs.png';
 
 import products from "../assets/fake-data/products.js";
 
@@ -27,19 +27,19 @@ import TestimonialSlider from "../components/UI/slider/TestimonialSlider.jsx";
 
 const featureData = [
   {
-    title: "Quick Delivery",
-    imgUrl: featureImg01,
+    title: "Fast Response",
+    imgUrl: cs,
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
   },
 
   {
-    title: "Super Dine In",
-    imgUrl: featureImg02,
+    title: "Get Certificate",
+    imgUrl: certi,
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
   },
   {
-    title: "Easy Pick Up",
-    imgUrl: featureImg03,
+    title: "Learn From Anywhere",
+    imgUrl: featureImg01,
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
   },
 ];
@@ -61,7 +61,7 @@ const Home = () => {
       setAllProducts(products);
     }
 
-    if (category === "BURGER") {
+    if (category === "Frontend") {
       const filteredProducts = products.filter(
         (item) => item.category === "Frontend Courses"
       );
@@ -69,7 +69,7 @@ const Home = () => {
       setAllProducts(filteredProducts);
     }
 
-    if (category === "PIZZA") {
+    if (category === "Backend") {
       const filteredProducts = products.filter(
         (item) => item.category === "Backend Courses"
       );
@@ -77,7 +77,7 @@ const Home = () => {
       setAllProducts(filteredProducts);
     }
 
-    if (category === "BREAD") {
+    if (category === "Mobile") {
       const filteredProducts = products.filter(
         (item) => item.category === "Mobile Courses"
       );
@@ -181,9 +181,9 @@ const Home = () => {
                 </button>
                 <button
                   className={`d-flex align-items-center gap-2 ${
-                    category === "BURGER" ? "coursesBtnActive" : ""
+                    category === "Frontend" ? "coursesBtnActive" : ""
                   } `}
-                  onClick={() => setCategory("BURGER")}
+                  onClick={() => setCategory("Frontend")}
                 >
                   <img src={codingCategoryImg01} alt="" />
                   Frontend Courses
@@ -191,9 +191,9 @@ const Home = () => {
 
                 <button
                   className={`d-flex align-items-center gap-2 ${
-                    category === "PIZZA" ? "coursesBtnActive" : ""
+                    category === "Backend" ? "coursesBtnActive" : ""
                   } `}
-                  onClick={() => setCategory("PIZZA")}
+                  onClick={() => setCategory("Backend")}
                 >
                   <img src={codingCategoryImg01} alt="" />
                   Backend Courses
@@ -201,9 +201,9 @@ const Home = () => {
 
                 <button
                   className={`d-flex align-items-center gap-2 ${
-                    category === "BREAD" ? "coursesBtnActive" : ""
+                    category === "Mobile" ? "coursesBtnActive" : ""
                   } `}
-                  onClick={() => setCategory("BREAD")}
+                  onClick={() => setCategory("Mobile")}
                 >
                   <img src={codingCategoryImg01} alt="" />
                   Mobile Course
@@ -281,7 +281,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center mb-5 ">
-              <h2>Courses Top</h2>
+              <h2>Khursus Top</h2>
             </Col>
 
             {hotCourses.map((item) => (

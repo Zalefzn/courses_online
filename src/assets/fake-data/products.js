@@ -26,8 +26,8 @@ import product_06_image_03 from "../images/coding(3).png";
 const products = [
   {
     id: "01",
-    title: "Belajar Frontend Dasar",
-    price: 24.0,
+    title: "Intensive Bootcamp\nFrontend Basic HTML, CSS & JS",
+    price: 550000,
     image01: product_01_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
@@ -38,8 +38,8 @@ const products = [
 
   {
     id: "02",
-    title: "Belajar Backend Dasar part 1",
-    price: 115.0,
+    title: "Intensive Bootcamp\nBackend Basic PHP & MySql",
+    price: 350000,
     image01: product_02_image_01,
     image02: product_02_image_02,
     image03: product_02_image_03,
@@ -50,8 +50,8 @@ const products = [
 
   {
     id: "03",
-    title: "Belajar Backend Part 4",
-    price: 110.0,
+    title: "Intensive Bootcamp\nBackend Advanced PHP & MySql",
+    price: 400000,
     image01: product_03_image_01,
     image02: product_03_image_02,
     image03: product_03_image_03,
@@ -62,8 +62,8 @@ const products = [
 
   {
     id: "04",
-    title: "Belajar Backend Dasar part 4",
-    price: 110.0,
+    title: "Intensive Bootcamp\nBackend Basic Golang & Monggo DB",
+    price: 250000,
     image01: product_04_image_01,
     image02: product_04_image_02,
     image03: product_04_image_03,
@@ -74,8 +74,8 @@ const products = [
 
   {
     id: "05",
-    title: "Belajar Frontend Dasar part 4",
-    price: 24.0,
+    title: "Intensive Bootcamp\nFrontend Basic Javascript",
+    price: 200000,
     image01: product_05_image_01,
     image02: product_05_image_02,
     image03: product_05_image_03,
@@ -85,8 +85,8 @@ const products = [
   },
   {
     id: "06",
-    title: "Belajar Frontend Dasar Part 2",
-    price: 24.0,
+    title: "Intensive Bootcamp\nFrontend Javascript with react js",
+    price: 600000,
     image01: product_01_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
@@ -97,8 +97,8 @@ const products = [
 
   {
     id: "07",
-    title: "Belajar Backend Part 2",
-    price: 115.0,
+    title: "Intensive Bootcamp\nBackend Javascript with Express Js",
+    price: 520000,
     image01: product_02_image_02,
     image02: product_02_image_01,
     image03: product_02_image_03,
@@ -109,8 +109,8 @@ const products = [
 
   {
     id: "08",
-    title: "Belajar Mobile part 1",
-    price: 110.0,
+    title: "Intensive Bootcamp\nMobile Basic With Flutter",
+    price: 150000,
     image01: product_03_image_02,
     image02: product_03_image_01,
     image03: product_03_image_03,
@@ -121,8 +121,8 @@ const products = [
 
   {
     id: "09",
-    title: "Belajar Mobile Part 2",
-    price: 110.0,
+    title: "Intensive Bootcamp\nMobile With Flutter API & MySql",
+    price: 300000,
     image01: product_04_image_02,
     image02: product_04_image_01,
     image03: product_04_image_03,
@@ -133,8 +133,8 @@ const products = [
 
   {
     id: "10",
-    title: "Belajar Frontend Dasar part 3",
-    price: 24.0,
+    title: "Intensive Bootcamp\nFrontend With vue js",
+    price: 450000,
     image01: product_05_image_02,
     image02: product_05_image_01,
     image03: product_05_image_03,
@@ -145,8 +145,8 @@ const products = [
 
   {
     id: "11",
-    title: "Belajar Mobile part 3 ",
-    price: 35.0,
+    title: "Intensive Bootcamp\nMobile With Flutter Statemanagement BLOC",
+    price: 250000,
     image01: product_06_image_01,
     image02: product_06_image_02,
     image03: product_06_image_03,
@@ -157,8 +157,8 @@ const products = [
 
   {
     id: "12",
-    title: "Belajar Frontend part 4 ",
-    price: 35.0,
+    title: "Intensive Bootcamp\nFrontend Basic With Next JS",
+    price: 380000,
     image01: product_06_image_02,
     image02: product_06_image_01,
     image03: product_06_image_03,
@@ -169,12 +169,34 @@ const products = [
 
   {
     id: "13",
-    title: "Belajar Backend Part 3 ",
-    price: 35.0,
+    title: "Intensive Bootcamp\nBackend Basic With Bun JS",
+    price: 700000,
     image01: product_06_image_03,
     image02: product_06_image_02,
     image03: product_06_image_03,
     category: "Backend Courses",
+
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+  },
+  {
+    id: "14",
+    title: "Intensive Bootcamp\nMobile Basic With React Native",
+    price: 500000,
+    image01: product_06_image_03,
+    image02: product_06_image_02,
+    image03: product_06_image_03,
+    category: "Mobile Courses",
+
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+  },
+  {
+    id: "15",
+    title: "Intensive Bootcamp\nMobile With Kotlin",
+    price: 470000,
+    image01: product_06_image_03,
+    image02: product_06_image_02,
+    image03: product_06_image_03,
+    category: "Mobile Courses",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },
