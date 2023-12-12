@@ -46,7 +46,9 @@ const cartSlice = createSlice({
           title: newItem.title,
           image01: newItem.image01,
           price: newItem.price,
-          quantity: 1,
+          topik: newItem.topik,
+          judul: newItem.judul,
+          quantity: 1,  
           totalPrice: newItem.price,
         });
       } else {

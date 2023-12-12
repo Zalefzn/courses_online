@@ -4,7 +4,7 @@ import products from "../assets/fake-data/products";
 import { useParams } from "react-router-dom";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, ListGroupItem  } from "reactstrap";
 
 import { useDispatch } from "react-redux";
 import { cartActions } from "../store/shopping-cart/cartSlice";
@@ -23,7 +23,7 @@ const CoursesDetails = () => {
 
   const product = products.find((product) => product.id === id);
   const [previewImg, setPreviewImg] = useState(product.image01);
-  const { title, price, category, desc, image01 } = product;
+  const { title, price, category, desc, image01,topik, judul } = product;
 
   const relatedProduct = products.filter((item) => category === item.category);
 
@@ -34,6 +34,8 @@ const CoursesDetails = () => {
         title,
         price,
         image01,
+        topik,
+        judul,
       })
     );
   };
@@ -124,7 +126,78 @@ const CoursesDetails = () => {
 
               {tab === "desc" ? (
                 <div className="tab__content">
-                  <p>{desc}</p>
+                  <h2>{desc}</h2>
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Pengenalan HTML Dasar
+                    </p>
+                    <p className="choose__us-desc">
+                      Materi yang akan di bahas pada pertemuan ini berkaitan dengan HTML Semantic dan form penginputan<br />
+                      Dan menejelaskan dasar dasar HTML seperti paragraf, heading, image, dllnya
+                    </p>
+                  </ListGroupItem>
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Pengenalan HTML Dasar
+                    </p>
+                    <p className="choose__us-desc">
+                      Materi yang akan di bahas pada pertemuan ini berkaitan dengan HTML Semantic dan form penginputan<br />
+                      Dan menejelaskan dasar dasar HTML seperti paragraf, heading, image, dllnya
+                    </p>
+                  </ListGroupItem>
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Pengenalan HTML Dasar
+                    </p>
+                    <p className="choose__us-desc">
+                      Materi yang akan di bahas pada pertemuan ini berkaitan dengan HTML Semantic dan form penginputan<br />
+                      Dan menejelaskan dasar dasar HTML seperti paragraf, heading, image, dllnya
+                    </p>
+                  </ListGroupItem>
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Pengenalan HTML Dasar
+                    </p>
+                    <p className="choose__us-desc">
+                      Materi yang akan di bahas pada pertemuan ini berkaitan dengan HTML Semantic dan form penginputan<br />
+                      Dan menejelaskan dasar dasar HTML seperti paragraf, heading, image, dllnya
+                    </p>
+                  </ListGroupItem>
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Pengenalan HTML Dasar
+                    </p>
+                    <p className="choose__us-desc">
+                      Materi yang akan di bahas pada pertemuan ini berkaitan dengan HTML Semantic dan form penginputan<br />
+                      Dan menejelaskan dasar dasar HTML seperti paragraf, heading, image, dllnya
+                    </p>
+                  </ListGroupItem>
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Pengenalan HTML Dasar
+                    </p>
+                    <p className="choose__us-desc">
+                      Materi yang akan di bahas pada pertemuan ini berkaitan dengan HTML Semantic dan form penginputan<br />
+                      Dan menejelaskan dasar dasar HTML seperti paragraf, heading, image, dllnya
+                    </p>
+                  </ListGroupItem>
+                  <h2>{judul}</h2>
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> E-Sertifikat
+                    </p>
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Portofolio
+                    </p>
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Job Connector
+                    </p>
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Career Development
+                    </p>
+                    
+                  </ListGroupItem>
+                  
                 </div>
               ) : (
                 <div className="tab__form mb-3">
@@ -183,7 +256,7 @@ const CoursesDetails = () => {
             </Col>
 
             <Col lg="12" className="mb-5 mt-4">
-              <h2 className="related__Product-title">You might also like</h2>
+              <h2 className="related__Product-title">Lihat Juga Yang Lainnya</h2>
             </Col>
 
             {relatedProduct.map((item) => (
